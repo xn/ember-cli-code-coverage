@@ -19,7 +19,7 @@
     var data = JSON.stringify(coverageData || {});
 
     var request = new XMLHttpRequest();
-    request.open('POST', '/write-coverage', REQUEST_ASYNC);
+    request.open('POST', 'http://localhost:8008/write-coverage', REQUEST_ASYNC);
     request.setRequestHeader('Content-Type', 'application/json; charset=utf-8');
     request.send(data);
 
